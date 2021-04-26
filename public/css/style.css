@@ -1,0 +1,82 @@
+body{
+	margin: 0;
+	padding: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+a{text-decoration: none;}
+
+/*INDEX*/
+main.mainindex{
+	width: 100%; 
+	height: 100%; 
+	position: absolute; 
+	top:0; 
+	background: url('../images/banner.jpg'); 
+	background-size: cover; 
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	font-family: 'helvetica';
+}
+	main.mainindex h1{backdrop-filter: blur(30px); padding: 2%; border-radius: 30px;}
+
+/*INSCRIPTION*/
+main.maininscription{background-color: gray; font-family: helvetica; text-align: center; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; top: 0;}
+	main.maininscription form{display: flex; flex-direction: column;}
+		main.maininscription label, main.maininscription input[type="submit"]{margin-top: 5vh;}
+		main.maininscription input{ border-radius: 10px; height: 6vh; width: 18vw; font-size: 1.2em;}
+			main.maininscription input:focus{outline: none;}
+		main.maininscription .inscription{background-color: rgb(255, 147, 147); border: solid 1px red; color: red; border-radius : 10px; padding: 1vh; position: absolute; bottom: 10vh;}
+
+/*CONNEXION*/
+main.mainconnexion{background-color: gray; font-family: helvetica; text-align: center; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; top: 0;}
+	main.mainconnexion form{display: flex; flex-direction: column;}
+		main.mainconnexion label, main.mainconnexion input[type="submit"]{margin-top: 5vh;}
+		main.mainconnexion input{ border-radius: 10px; height: 6vh; width: 18vw; font-size: 1.2em;}
+			main.mainconnexion input:focus{outline: none;}
+		main.mainconnexion .connexion{background-color: rgb(255, 147, 147); border: solid 1px red; color: red; border-radius : 10px; padding: 1vh; position: absolute; bottom: 15vh;}
+
+/*PROFIL*/
+main.mainprofil{background-color: gray; font-family: helvetica; text-align: center; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; top: 0;}
+	main.mainprofil form{display: flex; flex-direction: column;}
+		main.mainprofil label, main.mainprofil input[type="submit"]{margin-top: 5vh;}
+		main.mainprofil input{ border-radius: 10px; height: 6vh; width: 18vw; font-size: 1.2em;}
+			main.mainprofil input:focus{outline: none;}
+		main.mainprofil .connected{background-color: rgb(136, 180, 136); border: solid 1px green; color: green; border-radius : 10px; padding: 1vh; position: absolute; top: 10vh;}
+	main.mainprofil .table-booking td{border: 1px solid black;}
+
+/*RESERVATION*/
+main.mainreservation{display: flex; justify-content: space-between; width: 100%; height: 100%; position: absolute; top:0; background: gray; font-family: 'helvetica';}
+	main.mainreservation div{text-align: center; border-radius: 20px; background-color: white; border: solid 3px black; margin-top: 6%; width: calc((100%/3)-3px); height: 75%;}
+		main.mainreservation img{width: 100%; height: 50%;}
+		main.mainreservation img:hover{opacity: 0.5;}
+		main.mainreservation table{text-align: center; width: 100%; height: 20%;}
+			main.mainreservation td, main.mainreservation th{border: solid 2px black; background-color: gray; color: white; width: 12.5%;}
+
+/*RESERVER*/
+main.mainreserver{background-color: gray; font-family: helvetica; text-align: center; width: 100%; height: 120%; display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; top: 0;}
+	main.mainreserver form{display: flex; flex-direction: column;}
+		main.mainreserver label, main.mainreserver input[type="submit"]{margin-top: 5vh;}
+		main.mainreserver input, main.mainreserver select{ border-radius: 10px; height: 6vh; width: 18vw; font-size: 1.2em;}
+			main.mainreserver input:focus{outline: none;}
+		main.mainreserver .reserver{background-color: rgb(255, 147, 147); border: solid 1px red; color: red; border-radius : 10px; padding: 1vh; position: absolute; bottom: 10vh; right: 0;}		
+			main.mainreserver .additional input{width: 100%;}
+
+/*HEADER & FOOTER*/
+/*HEADER____________________*/
+header{position: absolute; width: 100%; height: 10%; font-family: 'helvetica'; font-weight: bold; z-index: 10;}
+
+header nav{display: flex; width: 100%; height: 100%; justify-content: space-evenly;}
+	header nav p{max-height: calc(100% - 3px); height: calc(100% - 3px); width: 7vw; margin: 0; display: flex; justify-content: center; align-items: center;}
+		header nav p:hover{cursor: pointer;  border-bottom: solid 3px black; backdrop-filter: blur(10px);}
+	header nav a{color: black;}
+
+/*FOOTER____________________*/
+footer{position: fixed; bottom: 0; width: 100%; height: 7%; background-color: rgba(255, 255, 255, 0.2); border-top: solid 1px white; backdrop-filter: blur(10px); font-family: 'helvetica';}
+
+footer nav{display: flex; width: 100%; height: 100%; justify-content: space-evenly;}
+	footer nav p{height: calc(100% - 3px); width: 7vw; margin: 0; display: flex; justify-content: center; align-items: center;}
+		footer nav p:hover{cursor: pointer; text-decoration: underline;}
+	footer nav a{color: black;}
